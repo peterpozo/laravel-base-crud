@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomepageController@home')->name('home'); // homepage del sito (per i visitatori)
+Route::get('/dashboard', 'HomepageController@dashboard')->name('dashboard'); // dashboard dell'amministratore
 
 Route::resource('comics', 'ComicsController');
